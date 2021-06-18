@@ -3,6 +3,8 @@ import time
 import os
 from UCAS import CookieError, LoginError, UCAS
 
+# 来源：Github Mondayfirst的UCAS_course_select项目
+
 # 设置cookie，非必选
 if os.path.isfile("Cookie.txt"):
     with open("Cookie.txt", 'r', encoding='utf-8') as f:

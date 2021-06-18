@@ -2,6 +2,8 @@ import re
 import requests
 import certcode
 
+# 来源：Github Mondayfirst的UCAS_course_select项目
+
 timeout = 1  # 设置请求等待时长，单位为秒
 ERRORCOUNT = 2
 

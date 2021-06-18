@@ -4,6 +4,8 @@ from io import BytesIO
 import base64
 import json
 
+# 来源：Github Mondayfirst的UCAS_course_select项目
+
 
 def certCode(self):
     response = self.session.get("http://sep.ucas.ac.cn/changePic")
