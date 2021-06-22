@@ -38,8 +38,9 @@ while True:
         user.s = ""
     except LoginError as e:
         print(e.message)
-        print(f"等待{600}秒尝试下次登录")
-        time.sleep(600)
+        seconds = 600
+        print(f"等待{seconds}秒尝试下次登录")
+        time.sleep(seconds)
         user.flag_login = True
     except Exception as e:
         print(e)

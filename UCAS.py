@@ -54,7 +54,7 @@ class UCAS:
             }
             html = self.session.get("http://sep.ucas.ac.cn/").text
             if "验证码" in html:
-                certCode = certcode.certCode()
+                certCode = certcode.certCode(self.session)
                 data['certCode'] = certCode
             self.session.post('http://sep.ucas.ac.cn/slogin', data, timeout=10)
             html = self.session.get('http://sep.ucas.ac.cn/portal/site/226/821', timeout=timeout)
